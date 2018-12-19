@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  winner = nil 
+  winner = []
 
   data.each do |seasons, info|
     if seasons == season.to_sym
