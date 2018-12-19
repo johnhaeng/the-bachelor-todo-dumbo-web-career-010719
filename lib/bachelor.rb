@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
 
   data.each do |season_num, arr|
     if season_num == season.to_sym
-      arr.each do |contestant||
+      arr.each do |contestant|
         if contestant[:status] == "Winner"
          winner << contestant[:name].split(' ')[0]
         end
